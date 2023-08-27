@@ -99,6 +99,8 @@ RunService.RenderStepped:Connect(function()
 end)
 
 --esp
+_G.esp = true
+while _G.esp do wait()
 local esp_settings = { 
     textsize = 8,
     colour = 255,255,255
@@ -132,7 +134,11 @@ game:GetService("RunService").RenderStepped:Connect(function()
     end
 end
 end)
+end
 --Highlight
+_G.highlight = true 
+while _G.highlight do wait()
+
 local FillColor = Color3.fromRGB(175,25,255)
 local DepthMode = "AlwaysOnTop"
 local FillTransparency = 0.5
@@ -182,3 +188,4 @@ Players.PlayerRemoving:Connect(function(plr)
         connections[plr]:Disconnect()
     end
 end)
+end
