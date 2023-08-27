@@ -9,7 +9,7 @@ local Holding = false
 
 -- _G. Settings
 _G.Aim = true
-_G.TeamCheck = false
+_G.TeamCheck = true
 _G.AimPart = "Head"
 _G.Sensitivity = 0
 
