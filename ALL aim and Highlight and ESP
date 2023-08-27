@@ -97,6 +97,7 @@ RunService.RenderStepped:Connect(function()
         end
     end
 end)
+
 --esp
 local esp_settings = { 
     textsize = 8,
